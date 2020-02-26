@@ -15,4 +15,5 @@ sudo vi /etc/yum.repos.d/localnet.repo
 # enabled=1
 # gpgcheck=0
 
-
+#show all updates made today
+sudo cat /var/log/yum.log | grep "$(date +"%b %d")"
